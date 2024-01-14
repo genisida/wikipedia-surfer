@@ -4,7 +4,6 @@ const element = choose([...document.querySelectorAll("#bodyContent a:not(.mw-fil
 element.classList.add("rainbow");
 const a = new CSSStyleSheet();
 a.replaceSync(`.rainbow {
-    /* 横長で虹色を作る */
     border: 2px solid #36CF;
     animation: gaming .5s linear infinite;
   }
