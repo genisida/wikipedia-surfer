@@ -20,7 +20,6 @@ document.adoptedStyleSheets = [a];
 //スクロールする
 element.scrollIntoView({behavior: "smooth",block: "center",inline:"center",});
 element.focus({preventScroll:true});
-await new Promise(r=>setTimeout(r,1000));
 
 //リンクに遷移する
-element.click();
+setTimeout(()=>element.click(),1000);
